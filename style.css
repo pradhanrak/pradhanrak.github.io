@@ -1,0 +1,70 @@
+body{
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  /* fallback */
+  background-color: #4CAF50;
+  /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#4CAF50), to(#1B5E20));
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(circle, #4CAF50, #1B5E20);
+  /* Firefox 3.6+ */
+  background: -moz-radial-gradient(circle, #4CAF50, #1B5E20);
+  /* IE 10 */
+  background: -ms-radial-gradient(circle, #4CAF50, #1B5E20);
+  text-align: center;
+  color: #fff;
+}
+
+.content{
+  font-size: 38px;
+  margin-top: 7%;/*
+  margin-bottom: 1.5em;*/
+  font-weight: 300;
+}
+
+.icon{
+  background: url(image/under-construction.png) no-repeat;
+  display: block;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 3%;
+  position: relative;
+  margin-bottom: 3em;
+}
+
+.icon:hover #credit{
+  display: block!important;
+}
+
+#tag{
+  font-weight: 300;
+}
+
+#comeback{
+  display: block;
+  line-height: 46px;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.sign{
+  margin-top: 2em;
+  padding: 2em 0;
+  border-top: 2px solid #fff;
+  border-top: 2px solid rgba(255,255,255,0.4);
+  font-weight: 300;
+}
+
+#credit{
+  background-color: #BDBDBD;
+  background-color: rgba(120,144,156,0.4);
+  position: absolute;
+  bottom: 0;
+  left: 200px;
+  width: 120px;
+  padding: 8px;
+  display: none;
+  font-weight: 300;
+  font-size: 14px;
+}
