@@ -48,11 +48,13 @@ body{
 }
 
 .sign{
-  margin-top: 2em;
   padding: 2em 0;
   border-top: 2px solid #fff;
   border-top: 2px solid rgba(255,255,255,0.4);
   font-weight: 300;
+  display: block;
+  width: 60%;
+  margin: 2em auto 0 auto;
 }
 
 #credit{
