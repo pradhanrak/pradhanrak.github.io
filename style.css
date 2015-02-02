@@ -13,11 +13,23 @@ body{
   background: -ms-radial-gradient(circle, #4CAF50, #1B5E20);
   text-align: center;
   color: #fff;
+  margin: 0;
+}
+
+.content-wrap{
+  position: relative;
+}
+
+.inner-wrap{
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 100%;
 }
 
 .content{
   font-size: 38px;
-  margin-top: 12%;
+ /* margin-top: 12%;*/
   font-weight: 300;
 }
 
@@ -26,10 +38,8 @@ body{
   display: block;
   width: 200px;
   height: 200px;
-  margin: 0 auto;
-  margin-top: 3%;
+  margin: 1.5em auto;
   position: relative;
-  margin-bottom: 3em;
 }
 
 .icon:hover #credit{
@@ -48,7 +58,7 @@ body{
 }
 
 .sign{
-  padding: 2em 0;
+  padding-top: 2em;
   border-top: 2px solid #fff;
   border-top: 2px solid rgba(255,255,255,0.4);
   font-weight: 300;
