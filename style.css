@@ -18,6 +18,7 @@ body{
 
 .content-wrap{
   position: relative;
+  min-height: 500px;
 }
 
 .inner-wrap{
@@ -48,6 +49,10 @@ body{
 
 #tag{
   font-weight: 300;
+}
+
+.tagline{
+  padding: 0 20px;
 }
 
 #comeback{
