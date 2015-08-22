@@ -8,7 +8,6 @@ body{
   /* Safari 5.1+, Chrome 10+ */
   background: -webkit-radial-gradient(circle, #4CAF50, #1B5E20);
   /* Firefox 3.6+ */
-  background: -moz-radial-gradient(circle, #4CAF50, #1B5E20);
   /* IE 10 */
   background: -ms-radial-gradient(circle, #4CAF50, #1B5E20);
   text-align: center;
@@ -24,8 +23,11 @@ body{
 .inner-wrap{
   position: absolute;
   top: 50%;
-  transform: translate(0, -50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 100%;
+  padding: 2em 0;
 }
 
 .content{
