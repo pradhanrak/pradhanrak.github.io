@@ -61,7 +61,7 @@ body .content-wrap .content {
   font-size: 16px;
   font-family: "Cambay", sans-serif;
   width: 100%; }
-  body .content-wrap .content.row-2, body .content-wrap .content.row-3 {
+  body .content-wrap .content.row-3 {
     padding: 0 20px; }
   body .content-wrap .content .my-photo {
     width: 40vw;
@@ -124,71 +124,15 @@ body .content-wrap .content {
         font-family: "Duru Sans", sans-serif;
         font-size: 24px;
         font-style: normal; }
-body .content-wrap .row-2-wrap {
-  background-color: #fff; }
-  body .content-wrap .row-2-wrap .row-2 {
-    margin-bottom: 0;
-    padding-top: 20px;
-    padding-bottom: 40px;
-    position: relative; }
-    body .content-wrap .row-2-wrap .row-2::after {
-      content: "";
-      height: 101%;
-      width: 10px;
-      background-color: #424242;
-      position: absolute;
-      bottom: -1%;
-      left: 0px; }
-    body .content-wrap .row-2-wrap .row-2 .title {
-      font-size: 68px;
-      padding-left: 7px; }
-    body .content-wrap .row-2-wrap .row-2 .qualities li {
-      padding-left: 10px;
-      margin-bottom: 8px;
-      position: relative; }
-      body .content-wrap .row-2-wrap .row-2 .qualities li::before {
-        content: "";
-        width: 0px;
-        height: 0px;
-        position: absolute;
-        top: 7px;
-        left: -10px;
-        border-top: 5px solid transparent;
-        border-bottom: 5px solid transparent;
-        border-left: 10px solid #424242; }
-      body .content-wrap .row-2-wrap .row-2 .qualities li span {
-        font-size: 18px; }
-body .content-wrap .conclusion {
-  font-family: "Vollkorn", serif;
-  background: #424242;
-  color: #fff;
-  padding-top: 20px;
-  padding-bottom: 40px; }
-  body .content-wrap .conclusion .moto {
-    font-size: 26px;
-    line-height: 1.5;
-    margin: auto;
-    padding: 0px 20px 0px 27px;
-    font-family: "Vollkorn", serif; }
-  body .content-wrap .conclusion .quote {
-    font-size: 98px;
-    height: 75px;
-    font-family: "Palanquin", sans-serif;
-    padding-left: 27px; }
-  body .content-wrap .conclusion .moto-me {
-    padding: 20px 20px 0px 27px;
-    text-align: right;
-    font-family: "Cambay", sans-serif;
-    font-style: italic; }
 body .content-wrap .row-3 {
   max-width: 100%;
   background-color: #fff;
   margin-bottom: 0px; }
   body .content-wrap .row-3 .contact-wrap {
-    padding: 40px 0;
+    padding: 28px 0;
     text-align: center; }
     body .content-wrap .row-3 .contact-wrap > div:nth-child(n+2) {
-      margin-top: 20px; }
+      margin-top: 28px; }
     body .content-wrap .row-3 .contact-wrap .title {
       font-style: italic;
       font-size: 15px;
@@ -218,18 +162,7 @@ body .content-wrap .row-3 {
       color: #dd4b39;
       font-weight: bold; }
     body .content-wrap .row-3 .contact-wrap .cv-wrap a {
-      border: 2px solid #388E3C;
-      color: #388E3C;
-      display: block;
-      max-width: 200px;
-      width: 100%;
-      height: 40px;
-      line-height: 40px;
-      margin: 0 auto; }
-      body .content-wrap .row-3 .contact-wrap .cv-wrap a:hover, body .content-wrap .row-3 .contact-wrap .cv-wrap a:focus {
-        text-decoration: none;
-        color: #fff;
-        background-color: #388E3C; }
+      color: #388E3C; }
 body .thank-you {
   width: 100%;
   color: #fff;
@@ -239,16 +172,18 @@ body .thank-you {
   font-size: 18px;
   line-height: 1.5;
   background-color: #388E3C; }
-  body .thank-you .content > div:last-child * {
+  body .thank-you .content a.github-link {
     font-size: 12px;
     display: block;
-    margin-top: 12px; }
-  body .thank-you .content > div:last-child a.github-link {
+    margin-top: 12px;
     color: #fff;
     font-weight: normal;
     width: auto; }
 
-@media(min-width: 300px) {
+@media(min-width: 320px) {
+  body .content-wrap .row-3 .contact-wrap > div {
+    height: 48px;
+    line-height: 48px; }
   body .content-wrap .row-3 .contact-wrap .social-wrap .social li {
     float: left;
     margin: 0px 24px 0px 0px;
@@ -272,37 +207,28 @@ body .thank-you {
       margin-right: 0px; }
       body .content-wrap .row-3 .contact-wrap .social-wrap .social li:last-child::after {
         display: none; } }
-@media(min-width: 500px) {
+@media(min-width: 620px) {
   body .footer-wrap {
     padding-left: 40px;
     padding-right: 40px; }
     body .footer-wrap .content {
       overflow: hidden; }
-      body .footer-wrap .content div:last-child .github-link {
-        float: right;
-        width: 50%; }
-      body .footer-wrap .content div:last-child .copyright {
-        float: left;
-        width: 50%;
-        text-align: left; }
   body .content-wrap .content.row-3 .contact-wrap {
     overflow: hidden; }
     body .content-wrap .content.row-3 .contact-wrap > div {
       float: left;
       width: 50%; }
+      body .content-wrap .content.row-3 .contact-wrap > div:nth-child(n+2) {
+        margin-top: 0; }
+      body .content-wrap .content.row-3 .contact-wrap > div:last-child {
+        margin-top: 28px; }
     body .content-wrap .content.row-3 .contact-wrap .mail-wrap {
       margin-top: 0; }
     body .content-wrap .content.row-3 .contact-wrap .cv-wrap {
       width: 100%; }
-  body .content-wrap .content .current-work,
-  body .content-wrap .content.row-2,
-  body .content-wrap .conclusion.moto-wrap .content > div {
+  body .content-wrap .content .current-work {
     padding-left: 40px;
-    padding-right: 40px; }
-  body .content-wrap .conclusion.moto-wrap .content > div {
-    padding-left: 47px; }
-  body .content-wrap .row-2-wrap .row-2::after {
-    width: 30px; } }
+    padding-right: 40px; } }
 @media(min-width: 768px) {
   body .content-wrap .content {
     overflow: hidden; }
@@ -314,43 +240,6 @@ body .thank-you {
       body .content-wrap .content .current-work p.workplace,
       body .content-wrap .content .current-work p.designation {
         text-align: left; }
-  body .content-wrap .row-2-wrap {
-    overflow: hidden;
-    position: relative;
-    z-index: 1;
-    background-color: #fafafa; }
-    body .content-wrap .row-2-wrap::before {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 40%;
-      height: 100%;
-      background-color: #fff;
-      z-index: -1; }
-    body .content-wrap .row-2-wrap::after {
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 60%;
-      height: 100%;
-      background-color: #424242;
-      z-index: -1; }
-    body .content-wrap .row-2-wrap .conclusion {
-      float: left;
-      width: 60%;
-      z-index: 2; }
-    body .content-wrap .row-2-wrap .content.row-2 {
-      float: right;
-      width: 40%;
-      padding-left: 10px;
-      background-color: #fff;
-      z-index: 2; }
-      body .content-wrap .row-2-wrap .content.row-2::after {
-        content: none; }
   body .content-wrap .content.row-3 {
     border-top: 10px solid #fafafa; } }
 @media(min-width:900px) {
@@ -367,39 +256,19 @@ body .thank-you {
       max-width: 900px;
       width: 100%;
       height: 100%;
-      margin: 0 auto; }
-    body .content-wrap .row-2-wrap {
+      margin: 0 auto;
       border: 20px solid #fafafa; }
-      body .content-wrap .row-2-wrap::before {
+      body .content-wrap .content.row-1::before {
         border-left: 20px solid #fafafa;
         box-sizing: border-box; }
-      body .content-wrap .row-2-wrap .content.row-2 {
-        border-left: 20px solid #fafafa;
-        padding-left: 70px; }
-        body .content-wrap .row-2-wrap .content.row-2::after {
-          content: "";
-          height: 100vw;
-          width: 60px;
-          bottom: -80px; }
-        body .content-wrap .row-2-wrap .content.row-2 .title {
-          transform: rotate(-90deg);
-          -webkit-transform: rotate(-90deg);
-          padding-left: 90%;
-          margin-left: -120%;
-          color: #fff;
-          position: relative;
-          z-index: 2; }
     body .content-wrap .content.row-3 {
       padding-left: 40px;
       padding-right: 40px;
       border: 20px solid #fafafa;
       border-top: 0; }
-      body .content-wrap .content.row-3 .contact-wrap > div {
-        width: 35%; }
       body .content-wrap .content.row-3 .contact-wrap .social {
         overflow: visible; }
       body .content-wrap .content.row-3 .contact-wrap .cv-wrap {
-        width: 30%;
         margin-top: 0; }
         body .content-wrap .content.row-3 .contact-wrap .cv-wrap a {
           border: 0px;
@@ -469,27 +338,12 @@ body .thank-you {
       body .footer-wrap .content > div:first-child {
         font-size: 28px; } }
 @media(min-width: 960px) {
-  body .content-wrap .content .current-work {
-    padding-top: 20px; } }
-@media(min-width: 1024px) {
-  body,
-  body header,
-  body .content-wrap .row-2-wrap,
-  body .content-wrap .row-2-wrap .content.row-2,
-  body .content-wrap .content.row-3 {
-    border-width: 40px; }
-
-  body header {
-    padding: 20px 0px; }
-    body header .my-name {
-      font-size: 48px; }
-  body .content-wrap .row-2-wrap::before {
-    border-width: 40px; } }
-@media(min-width: 1200px) {
-  html {
-    background-color: #388E3C; }
-    html body {
-      max-width: 1200px;
-      margin: 0 auto; } }
+  body .content-wrap .content.row-3 .contact-wrap > div {
+    width: 35%; }
+    body .content-wrap .content.row-3 .contact-wrap > div:last-child {
+      margin-top: 0; }
+  body .content-wrap .content.row-3 .contact-wrap .cv-wrap {
+    width: 30%; } }
+@media(min-width: 1024px);
 
 /*# sourceMappingURL=main.css.map */
