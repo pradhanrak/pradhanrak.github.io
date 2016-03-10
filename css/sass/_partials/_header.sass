@@ -1,0 +1,28 @@
+header
+  .my-name
+    font-size: 32px
+    font-family: $highlight-fontfamily
+    text-align: center
+    display: block
+    max-width: 340px
+    width: 100%
+    margin: 0 auto
+    padding: 44px 10px
+    position: relative
+    color: $black
+    line-height: 38px
+    text-transform: uppercase
+    &::before,
+    &::after
+      content: ""
+      display: block
+      background-color: $black
+      width: 70%
+      height: 3px
+      position: absolute
+      right: 50%
+      transform: translateX(50%)
+      bottom: 34px
+    &::before
+      width: 46%
+      top: 34px

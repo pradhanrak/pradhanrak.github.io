@@ -1,0 +1,74 @@
+.content
+  padding: 0px 20px
+.my-photo
+  width: $photo-square
+  height: $photo-square
+  margin: 0 auto
+  overflow: hidden
+  +border-radius
+  max-width: $photo-max
+  max-height: $photo-max
+  min-width: $photo-min
+  min-height: $photo-min
+  img
+    width: 100%
+    height: auto
+.current-work
+  margin-top: 24px
+  padding: 0 20px 40px
+  p.workplace
+    font-size: 18px
+    text-align: center
+    a.yipl
+      font-family: $yi-fontfamily
+      text-decoration: none
+      font-weight: normal
+      &:hover
+        text-decoration: underline
+        color: $yi-black
+      span
+        cursor: pointer
+      .yi-black
+        color: $yi-black
+      .yi-orange
+        color: $yi-orange
+  p.designation
+    font-style: italic
+    padding-top: 6px
+    text-align: center
+  ul
+    margin: 12px auto 0
+    padding-left: 0px
+    width: 100%
+    li
+      list-style: none
+      position: relative
+      margin-bottom: 8px
+      &:last-child
+        margin-bottom: 0
+        font-style: italic
+        font-size: 20px
+    span.title
+      font-family: $highlight-fontfamily
+    span.title.one
+      font-size: 20px
+      padding-right: 8px
+    span.title.two
+      font-size: 22px
+    .rs-highlight
+      font-family: $highlight-fontfamily
+      font-size: 24px
+      font-style: normal
+
+@media(min-width: 768px)
+  .current-work ul
+    width: 75%
+    max-width: 940px
+    overflow: hidden
+    li
+      float: left
+      width: 48%
+      &:first-child
+        margin-right: 4%
+      &:nth-child(n+3)
+        width: 100%
