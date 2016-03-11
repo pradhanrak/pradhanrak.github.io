@@ -1,7 +1,10 @@
+var browserHeight = window.innerHeight;
+var browserWidth = window.innerWidth;
+var contentHeight = document.getElementById('content-wrap').offsetHeight;
 
 function setContentHeight() {
-  var browserHeight = window.innerHeight;
-  var contentHeight = document.getElementById('content-wrap').offsetHeight;
+  browserHeight = window.innerHeight;
+  contentHeight = document.getElementById('content-wrap').offsetHeight;
 
   document.getElementById('content-wrap').setAttribute("style","height:" + contentHeight + "px");
   if( browserHeight < contentHeight) {
@@ -11,12 +14,16 @@ function setContentHeight() {
     document.body.style.height = "100%";
   }
 }
-function viewWidth() {
-  var browserWidth = window.innerWidth;
-  if ( browserWidth >= 768) {
+
+function viewCheck() {
+  browserWidth = window.innerWidth;
+  browserHeight = window.innerHeight;
+  contentHeight = document.getElementById('content-wrap').offsetHeight;
+  if ( browserWidth >= 768 || browserHeight < contentHeight ) {
     setContentHeight();
   }
 }
 
-viewWidth();
+viewCheck();
+window.addEventListener("resize",viewCheck,false);
 window.addEventListener("resize",setContentHeight,false);
