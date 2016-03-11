@@ -22,7 +22,13 @@ header
       position: absolute
       right: 50%
       transform: translateX(50%)
+      -webkit-transform: translateX(50%)
       bottom: 34px
     &::before
       width: 46%
       top: 34px
+
+@media(min-width: 960px)
+  header
+    margin-bottom: 20px
+    margin-top: 20px
