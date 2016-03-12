@@ -1,29 +1,24 @@
-var browserHeight = window.innerHeight;
-var browserWidth = window.innerWidth;
-var contentHeight = document.getElementById('content-wrap').offsetHeight;
+//function to set height of the absolute div and the body
+function setHeight(heightBValue, heightCValue) {
+  document.getElementById('main-wrap').setAttribute("style","height:" + heightCValue);
+  document.body.style.height = heightBValue;
+}
 
-function setContentHeight() {
-  browserHeight = window.innerHeight;
-  contentHeight = document.getElementById('content-wrap').offsetHeight;
+//function to get measurements required
+function getMeasurements() {
+  var contentHeight = document.getElementById('main').clientHeight;
+  var browserWidth = window.innerWidth;
 
-  document.getElementById('content-wrap').setAttribute("style","height:" + contentHeight + "px");
-  if( browserHeight < contentHeight) {
-    document.body.style.height = contentHeight + "px";
+  //when browser width is less than 768px
+  if ( browserWidth >= 768 ) {
+    setHeight(contentHeight + 40 + "px", contentHeight + "px");
   }
   else {
-    document.body.style.height = "100%";
+    setHeight("auto", "auto");
   }
 }
 
-function viewCheck() {
-  browserWidth = window.innerWidth;
-  browserHeight = window.innerHeight;
-  contentHeight = document.getElementById('content-wrap').offsetHeight;
-  if ( browserWidth >= 768 || browserHeight < contentHeight ) {
-    setContentHeight();
-  }
-}
 
-viewCheck();
-window.addEventListener("resize",viewCheck,false);
-window.addEventListener("resize",setContentHeight,false);
+getMeasurements();
+//when browser resized
+window.addEventListener("resize",getMeasurements,false);
