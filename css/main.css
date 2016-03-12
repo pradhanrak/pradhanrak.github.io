@@ -32,18 +32,24 @@ body {
   border-top: 6px solid #388E3C; }
 
 @media(min-width: 768px) {
+  html {
+    background-color: #fafafa; }
+
   body {
     position: relative;
     min-height: 100vh;
-    height: 100%; }
-    body .content-wrap {
+    height: auto; }
+    body .main-wrap {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       -webkit-transform: translate(-50%, -50%);
       width: 100%;
-      max-width: 1200px; } }
+      max-width: 1024px;
+      height: 100%; }
+      body .main-wrap .main {
+        position: relative; } }
 header .my-name {
   font-size: 32px;
   font-family: "Duru Sans", sans-serif;
@@ -202,7 +208,7 @@ header .my-name {
 @media(min-width: 320px) {
   .social-wrap .social li {
     float: left;
-    margin: 0px 24px 0px 0px;
+    margin: 0px 40px 0px 0px;
     position: relative;
     border: 0;
     padding: 0; }
@@ -211,7 +217,7 @@ header .my-name {
       display: block;
       position: absolute;
       top: 50%;
-      right: -25%;
+      right: -24px;
       background-color: #cccccc;
       height: 4px;
       width: 4px;
@@ -225,16 +231,16 @@ header .my-name {
         display: none; } }
 @media(min-width:768px) {
   .contact {
-    position: fixed;
-    top: 50%;
+    position: absolute;
+    top: 27%;
     transform: rotate(-90deg);
     -webkit-transform: rotate(-90deg); }
 
   .social-wrap {
-    left: -5%; }
+    left: 0; }
 
   .mail-wrap {
-    right: -7%;
+    right: 0;
     width: auto;
     margin: 0; } }
 @media(min-width: 900px) {
@@ -300,7 +306,8 @@ footer {
   footer {
     background-color: #fafafa;
     text-align: center;
-    color: #388E3C; }
+    color: #388E3C;
+    padding: 40px; }
     footer .footer-content a.github-link {
       color: #388E3C; } }
 
