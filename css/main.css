@@ -4,10 +4,9 @@
 
 a {
   text-decoration: none;
-  color: #141414;
-  font-weight: bold;
   position: relative;
   cursor: pointer;
+  color: #4a4a4a;
 }
 
 a::after {
@@ -15,11 +14,15 @@ a::after {
   width: 40%;
   position: absolute;
   height: 2px;
-  background: #32b82e;
+  background: #32b67a;
   display: block;
   bottom: 0px;
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+}
+
+a:hover {
+  color: #141414;
 }
 
 a:hover::after {
@@ -37,9 +40,9 @@ li {
 body {
   min-height: 100vh;
   margin: 0;
-  background: #fafafa;
+  background: #f9f7e8;
   font-family: 'Open sans', sans-serif;
-  color: #424242;
+  color: #4a4a4a;
   font-size: 16px;
   line-height: 24px;
 
@@ -63,7 +66,7 @@ body {
 }
 
 .shape--left {
-  top: -308px;
+  top: -320px;
   left: 0;
   width: 40%;
   height: 200%;
@@ -83,7 +86,7 @@ body {
 #content {
   margin-left: auto; 
   margin-right: auto; 
-  width: 300px;
+  width: 320px;
   position: relative;
   z-index: 2;
 }
@@ -116,9 +119,8 @@ body {
 
 /*My name*/
 .my-name {
-  font-size: 34px;
-  line-height: 42px;
-  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  line-height: 36px;
   text-align: center;
   margin: 18px 0 10px 0;
 }
@@ -129,10 +131,11 @@ body {
 }
 
 .work {
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 32px;
+  line-height: 40px;
+  font-family: 'Raleway', sans-serif;
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 /*FOOTER*/
@@ -165,7 +168,7 @@ footer {
 @media(min-width:768px) {
 
   #content {
-    width: 340px;
+    width: 400px;
   }
   /*HEADER SECTION*/
 
@@ -186,14 +189,14 @@ footer {
 
   /*My name*/
   .my-name {
-    font-size: 42px;
-    line-height: 50px;
+    font-size: 38px;
+    line-height: 46px;
   }
 
   /*work*/
   .work {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 42px;
+    line-height: 50px;
   }
 
 }
