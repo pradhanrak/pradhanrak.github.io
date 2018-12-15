@@ -99,23 +99,17 @@ body {
 .my-photo {
   text-align: center;
   display: block;
-  height: 120px;
+  height: 180px;
   width: 100%;
   margin-top: 20px;
 }
 
-.my-photo--link {
-  display: block;
-}
-
-.my-photo--link::after {
-  content: none;
-}
-
 .my-photo--img{
-  height: 120px;
-  width: 120px;
+  height: 180px;
+  width: 180px;
   border-radius: 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 /*My name*/
@@ -123,7 +117,7 @@ body {
   font-size: 32px;
   line-height: 40px;
   text-align: center;
-  margin: 18px 0 10px 0;
+  margin: 30px 0 10px 0;
 }
 
 /*Work*/
@@ -132,8 +126,8 @@ body {
 }
 
 .work {
-  font-size: 28px;
-  line-height: 36px;
+  font-size: 20px;
+  line-height: 28px;
   font-family: 'Raleway', sans-serif;
   text-align: center;
   margin-bottom: 12px;
@@ -169,7 +163,7 @@ footer {
 @media(min-width:768px) {
 
   #content {
-    width: 400px;
+    width: 620px;
   }
   /*HEADER SECTION*/
 
@@ -179,13 +173,12 @@ footer {
 
   /*My photot*/
   .my-photo {
-    height: 180px;
-
+    height: 240px;
   }
 
   .my-photo--img {
-    height: 180px;
-    width: 180px;
+    height: 240px;
+    width: 240px;
   }
 
   /*My name*/
@@ -196,8 +189,7 @@ footer {
 
   /*work*/
   .work {
-    font-size: 34px;
-    line-height: 42px;
+    font-size: 24px;
+    line-height: 32px;
   }
-
 }
